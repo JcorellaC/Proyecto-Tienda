@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>Tienda de Artículos</title>
 </head>
 <body>
@@ -9,10 +10,10 @@
       <a href="#"><img src="img/logo.png" alt="LOGO"></a>
 
       <ul class="nav-container">
-        <li class="nav-item">inicio</li>
-        <li class="nav-item">productos</li>
-        <li class="nav-item">ofertas</li>
-        <li class="nav-item">contacto</li>
+        <li class="nav-item"><a href="#">inicio</a></li>
+        <li class="nav-item"><a href="#">productos</a></li>
+        <li class="nav-item"><a href="#">ofertas</a></li>
+        <li class="nav-item"><a href="#">contacto</a></li>
       </ul>
       <!--nav-container-->
     </nav>
@@ -24,13 +25,13 @@
 
       <section class="product-img-container">
         <div class="product-current-img">
-          <img src="#" alt="img/current-img.png" class="product-shown-img">
+          <img src="img/current-img.png" alt="current-img" class="product-shown-img">
         </div>
         <ul class="product-img-list">
-          <li class="product-img-item" id="1"><img src="#" alt="img/produc-img-0.png"></li>
-          <li class="product-img-item" id="2"><img src="#" alt="img/produc-img-1.png"></li>
-          <li class="product-img-item" id="3"><img src="#" alt="img/produc-img-2.png"></li>
-          <li class="product-img-item" id="4"><img src="#" alt="img/produc-img-3.png"></li>
+          <li class="product-img-item" id="1"><img src="img/produc-img-0.png" alt="product-img"></li>
+          <li class="product-img-item" id="2"><img src="img/produc-img-0.png" alt="product-img"></li>
+          <li class="product-img-item" id="3"><img src="img/produc-img-0.png" alt="product-img"></li>
+          <li class="product-img-item" id="4"><img src="img/produc-img-0.png" alt="product-img"></li>
         </ul>
       </section><!--img-container-->
 
@@ -62,7 +63,174 @@
           <video src="#"></video>
         </div>
       </section><!--product-info-container-->
-    </div>
+
+      <section class="related-container">
+        <ul class="related-list">
+          <li class="related-item">
+            <img src="img/related-product1">
+
+            <h3 class="related-item-title">nombre del producto</h3>
+          </li>
+          <li class="related-item">
+            <img src="img/related-product2">
+
+            <h3 class="related-item-title">nombre del producto</h3>
+          </li>
+          <li class="related-item">
+            <img src="img/related-product3">
+
+            <h3 class="related-item-title">nombre del producto</h3>
+          </li>
+        </ul>
+      </section><!--related-container-->
+
+      <section class="reviews-container">
+        <div class="review-commentary-field">
+          <form>
+            <textarea cols="10" rows="20"></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div><!--review-comentary-field-->
+
+        <ul class="review-commentary-list">
+          <li class="review-commentary-item">
+            <div class="review-commentary-user-info">
+              <img src="img/user.png" alt="user-picture">
+
+              <h3>nombre</h3>
+            </div>
+
+            <div class="review-commentary-body">
+              <h3>título</h3>
+
+              <ul class="average-container">
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+              </ul><!--average-container-->
+
+              <p class="review-commentary-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus laudantium error consequatur impedit autem fugiat et, iure architecto illum iste quibusdam molestiae ea, sunt neque.</p>
+            </div>
+          </li><!--review-commentary-item-->
+
+          <li class="review-commentary-item">
+            <div class="review-commentary-user-info">
+              <img src="img/user.png" alt="user-picture">
+
+              <h3>nombre</h3>
+            </div>
+
+            <div class="review-commentary-body">
+              <h3>título</h3>
+
+              <ul class="average-container">
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+              </ul><!--average-container-->
+
+              <p class="review-commentary-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus laudantium error consequatur impedit autem fugiat et, iure architecto illum iste quibusdam molestiae ea, sunt neque.</p>
+            </div>
+          </li><!--review-commentary-item-->
+
+          <li class="review-commentary-item">
+            <div class="review-commentary-user-info">
+              <img src="img/user.png" alt="user-picture">
+
+              <h3>nombre</h3>
+            </div>
+
+            <div class="review-commentary-body">
+              <h3>título</h3>
+
+              <ul class="average-container">
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+              </ul><!--average-container-->
+
+              <p class="review-commentary-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus laudantium error consequatur impedit autem fugiat et, iure architecto illum iste quibusdam molestiae ea, sunt neque.</p>
+            </div>
+          </li><!--review-commentary-item-->
+
+          <li class="review-commentary-item">
+            <div class="review-commentary-user-info">
+              <img src="img/user.png" alt="user-picture">
+
+              <h3>nombre</h3>
+            </div>
+
+            <div class="review-commentary-body">
+              <h3>título</h3>
+
+              <ul class="average-container">
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+              </ul><!--average-container-->
+
+              <p class="review-commentary-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus laudantium error consequatur impedit autem fugiat et, iure architecto illum iste quibusdam molestiae ea, sunt neque.</p>
+            </div>
+          </li><!--review-commentary-item-->
+
+          <li class="review-commentary-item">
+            <div class="review-commentary-user-info">
+              <img src="img/user.png" alt="user-picture">
+
+              <h3>nombre</h3>
+            </div>
+
+            <div class="review-commentary-body">
+              <h3>título</h3>
+
+              <ul class="average-container">
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+                <li class="average-item"><img src="img/star.png" alt=""></li>
+              </ul><!--average-container-->
+
+              <p class="review-commentary-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus laudantium error consequatur impedit autem fugiat et, iure architecto illum iste quibusdam molestiae ea, sunt neque.</p>
+            </div>
+          </li><!--review-commentary-item-->
+        </ul><!--review-commentary-list-->
+      </section><!--reviews-container-->
+    </div><!--main-content-->
   </div><!--wrapper-->
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
