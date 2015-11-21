@@ -23,6 +23,10 @@ p, li {
   line-height: 1.5;
 }
 
+li {
+  list-style: none;
+}
+
 p, ul, ol, dl {
   margin: 0 0 0.5em 0;
 }
@@ -58,35 +62,7 @@ th, td {
   padding: 0.5em;
 }
 
-/*
- * Rules for base drupal elements
- */
-
-.element-invisible {
-  @extend %hidden;
-}
-
-// Tabs
-.tabs {
-  padding: 0;
+.wrapper {
+  @include outer-container;
   overflow: hidden;
-  border-bottom: 1px solid #ccc;
-  margin: 10px 0;
-  li {
-    list-style-type: none;
-    float: left;
-  }
-  a {
-    color: #333;
-    @include font-size(14);
-    padding-right: 20px;
-    &.active {
-      color: #000;
-      font-weight: 600;
-    }
-    &:hover {
-      color: #000;
-      text-decoration: none;
-    }
-  }
 }
