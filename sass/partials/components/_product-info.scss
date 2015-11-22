@@ -1,0 +1,44 @@
+.product-info-container {
+	@include span-columns(12);
+}
+
+.product-maker {
+	width: 100%;
+}
+
+.product-price {
+	width: 100%;
+}
+
+.average-container {
+	@include span-columns(10);
+}
+
+.average-item {
+	@include span-columns(2);
+	@include omega(5n);
+}
+
+.recent-review-container {
+	@include span-columns(12);
+
+	img {
+		@include span-columns(4);
+	}
+}
+
+.recent-review-info {
+	@include span-columns(8);
+
+	h3 {
+		width: 100%,
+	}
+
+	p {
+		width: 100%;
+	}
+}
+
+.cta {
+	@include span-columns(3);
+}

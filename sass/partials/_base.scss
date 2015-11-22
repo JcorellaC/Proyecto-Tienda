@@ -66,3 +66,8 @@ th, td {
   @include outer-container;
   overflow: hidden;
 }
+
+.main-content {
+  @include span-columns(10);
+  @include shift(1);
+}

@@ -7,13 +7,35 @@
 	@include span-columns(2);
 }
 
-.nav-container {
-	@include span-columns(10);
+.show-menu {
+	@include span-columns(2);
+	@include shift(8);
 	@include omega();
+
+	text-align: center;
+
+	@media screen and(min-width:960px) {
+		display: none;
+	}
+}
+
+.nav-container {
+	@include span-columns(12);
+	padding: 0;
+
+	@media screen and (min-width: 960px) {
+		@include span-columns(10);
+		@include omega();
+	}
 }
 
 .nav-item {
 	float: left;
+	padding: 10px 0;
 	text-align: center;
-	width: 25%;
+	width: 100%;
+
+	@media screen and (min-width: 960px) {
+		width: 25%;
+	}
 }

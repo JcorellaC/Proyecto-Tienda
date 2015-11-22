@@ -1,0 +1,27 @@
+.product-review-container {
+	@include span-columns(12);
+}
+
+.category-name {
+	width: 100%;
+}
+
+.product-title {
+	width: 100%;
+}
+
+.product-current-img {
+	@include span-columns(12);
+}
+
+.product-img-list {
+	@include span-columns(12);
+}
+
+.product-img-item {
+	@include span-columns(3);
+	@include omega(4n);
+
+	margin: 0;
+	padding: 0;
+}
