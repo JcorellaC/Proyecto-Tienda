@@ -12,6 +12,10 @@
 
 .commentary-input {
 	width: 100%;
+
+	@media screen and (min-width: 620px) {
+		width: 75%;	
+	}
 }
 
 .commentary-submit {
@@ -19,5 +23,63 @@
 }
 
 .review-commentary-list {
+	@include span-columns(12);
+}
+
+.review-commentary-item {
+	@include span-columns(12);
+}
+
+.review-commentary-user-info {
+	@include span-columns(12);
+
+	img {
+		width: 50%;
+	}
+
+	h3 {
+		width: 100%;
+	}
+
+	@media screen and (min-width: 620px) {
+		& img {
+			width: 15%;
+		}
+	}
+}
+
+.review-commentary-body {
+	@include span-columns(12);
+
+	h3 {
+		width: 100%;
+	}
+}
+
+.review-average-container {
+	@include span-columns(10);
+	@include omega
+}
+
+.review-average-item {
+	@include span-columns(2);
+
+	img {
+		width: 100%;
+	}
+
+	@media screen and (min-width: 620px) {
+		& img {
+			width: 50%;
+		}
+	}
+
+	@media screen and (min-width: 960px) {
+		@include span-columns(1);
+		@include omega();
+	}
+}
+
+.review-commentary-content {
 	@include span-columns(12);
 }

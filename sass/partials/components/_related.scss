@@ -7,10 +7,19 @@
 }
 
 .related-list {
-	@include span-columns(12)
+	@include span-columns(12);
 }
 
 .related-item {
-	@include span-columns(4);
-	@include omega(3n);
+	@include span-columns(8 of 12);
+	@include shift();
+
+	@media screen and (min-width: 620px) {
+		@include span-columns(2 of 12);
+		@include shift(1.5);
+
+		img {
+			width: 100%;
+		}
+	}
 }

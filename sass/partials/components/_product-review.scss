@@ -1,5 +1,10 @@
 .product-review-container {
 	@include span-columns(12);
+
+	@media screen and (min-width: $desktop) {
+		@include span-columns(5 of 12);
+		@include omega();
+	}
 }
 
 .category-name {
@@ -21,7 +26,9 @@
 .product-img-item {
 	@include span-columns(3);
 	@include omega(4n);
-
 	margin: 0;
 	padding: 0;
+	img {
+		width: 100%;
+	}
 }

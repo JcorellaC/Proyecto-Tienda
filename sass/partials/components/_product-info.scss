@@ -1,5 +1,9 @@
 .product-info-container {
 	@include span-columns(12);
+
+	@media screen and (min-width: $desktop) {
+		@include span-columns(6 of 12);
+	}
 }
 
 .product-maker {
@@ -17,6 +21,10 @@
 .average-item {
 	@include span-columns(2);
 	@include omega(5n);
+
+	img {
+		width: 50%;
+	}
 }
 
 .recent-review-container {

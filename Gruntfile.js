@@ -8,7 +8,7 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        // Watch for changes and trigger compass, jshint & uglify
+        // Watch for changes and trigger compass & uglify
         watch: {
           sass: {
             files: ['sass/{,**/}*.scss'],
@@ -16,10 +16,6 @@ module.exports = function (grunt) {
             options: {
               livereload: true,
             }
-          },
-          js: {
-            files: '<%= jshint.all %>',
-            tasks: ['newer:jshint', 'uglify:dev']
           },
           images: {
             files: ['src-img/**/*.{png,jpg,gif}'],
@@ -65,17 +61,6 @@ module.exports = function (grunt) {
           dist: {
             src: 'css/style.css'
           }
-        },
-
-        // Javascript linting with jshint
-        jshint: {
-          options: {
-            jshintrc: '.jshintrc',
-            reporter: require('jshint-stylish')
-          },
-          all: [
-            'src-js/*.js'
-          ]
         },
 
         imagemin: {
@@ -132,7 +117,6 @@ module.exports = function (grunt) {
     // $ grunt build
 
     grunt.registerTask('prod', [
-        'jshint',
         'uglify:prod',
         'sass:prod',
         'postcss'
@@ -140,7 +124,6 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', [
         'imagemin',
-        'newer:jshint',
         'uglify:dev',
         'sass:dev',
         'postcss',

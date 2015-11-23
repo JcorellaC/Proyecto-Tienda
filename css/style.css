@@ -18,7 +18,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #fff; }
+  background-color: #ccc; }
 
 img {
   width: inherit;
@@ -80,6 +80,9 @@ th, td {
   .main-content:last-child {
     margin-right: 0; }
 
+div, section {
+  transition: all 1s linear; }
+
 .nav {
   float: left;
   display: block;
@@ -96,6 +99,8 @@ th, td {
   width: 14.7019570017%; }
   .logo:last-child {
     margin-right: 0; }
+  .logo img {
+    width: 100%; }
 
 .show-menu {
   float: left;
@@ -145,6 +150,15 @@ th, td {
   width: 100%; }
   .product-review-container:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 960px) {
+    .product-review-container {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 40.2913699012%;
+      margin-right: 0; }
+      .product-review-container:last-child {
+        margin-right: 0; } }
 
 .category-name {
   width: 100%; }
@@ -181,6 +195,8 @@ th, td {
     margin-right: 0; }
   .product-img-item:nth-child(4n+1) {
     clear: left; }
+  .product-img-item img {
+    width: 100%; }
 
 .product-info-container {
   float: left;
@@ -189,6 +205,14 @@ th, td {
   width: 100%; }
   .product-info-container:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 960px) {
+    .product-info-container {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 48.821174201%; }
+      .product-info-container:last-child {
+        margin-right: 0; } }
 
 .product-maker {
   width: 100%; }
@@ -215,6 +239,8 @@ th, td {
     margin-right: 0; }
   .average-item:nth-child(5n+1) {
     clear: left; }
+  .average-item img {
+    width: 50%; }
 
 .recent-review-container {
   float: left;
@@ -281,6 +307,13 @@ th, td {
   width: 100%; }
   .product-video:last-child {
     margin-right: 0; }
+  .product-video video {
+    width: 100%; }
+  @media screen and (min-width: 960px) {
+    .product-video video {
+      width: 75%;
+      margin: 0 auto;
+      display: block; } }
 
 .related-container {
   float: left;
@@ -305,13 +338,21 @@ th, td {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
-  width: 31.7615656014%; }
+  width: 65.8807828007%;
+  margin-left: 8.5298042998%; }
   .related-item:last-child {
     margin-right: 0; }
-  .related-item:nth-child(3n) {
-    margin-right: 0; }
-  .related-item:nth-child(3n+1) {
-    clear: left; }
+  @media screen and (min-width: 620px) {
+    .related-item {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 14.7019570017%;
+      margin-left: 12.7947064497%; }
+      .related-item:last-child {
+        margin-right: 0; }
+      .related-item img {
+        width: 100%; } }
 
 .reviews-container {
   float: left;
@@ -333,6 +374,9 @@ th, td {
 
 .commentary-input {
   width: 100%; }
+  @media screen and (min-width: 620px) {
+    .commentary-input {
+      width: 75%; } }
 
 .commentary-submit {
   width: 30%; }
@@ -343,6 +387,78 @@ th, td {
   margin-right: 2.3576515979%;
   width: 100%; }
   .review-commentary-list:last-child {
+    margin-right: 0; }
+
+.review-commentary-item {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%; }
+  .review-commentary-item:last-child {
+    margin-right: 0; }
+
+.review-commentary-user-info {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%; }
+  .review-commentary-user-info:last-child {
+    margin-right: 0; }
+  .review-commentary-user-info img {
+    width: 50%; }
+  .review-commentary-user-info h3 {
+    width: 100%; }
+  @media screen and (min-width: 620px) {
+    .review-commentary-user-info img {
+      width: 15%; } }
+
+.review-commentary-body {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%; }
+  .review-commentary-body:last-child {
+    margin-right: 0; }
+  .review-commentary-body h3 {
+    width: 100%; }
+
+.review-average-container {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 82.9403914003%;
+  margin-right: 0; }
+  .review-average-container:last-child {
+    margin-right: 0; }
+
+.review-average-item {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 14.7019570017%; }
+  .review-average-item:last-child {
+    margin-right: 0; }
+  .review-average-item img {
+    width: 100%; }
+  @media screen and (min-width: 620px) {
+    .review-average-item img {
+      width: 50%; } }
+  @media screen and (min-width: 960px) {
+    .review-average-item {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 6.1721527019%;
+      margin-right: 0; }
+      .review-average-item:last-child {
+        margin-right: 0; } }
+
+.review-commentary-content {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%; }
+  .review-commentary-content:last-child {
     margin-right: 0; }
 
 /*# sourceMappingURL=style.css.map */

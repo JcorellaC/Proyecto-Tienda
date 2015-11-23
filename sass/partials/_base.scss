@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #fff;
+  background-color: $body-back;
 }
 
 img {
@@ -70,4 +70,8 @@ th, td {
 .main-content {
   @include span-columns(10);
   @include shift(1);
+}
+
+div, section {
+  transition: all 1s linear;
 }
