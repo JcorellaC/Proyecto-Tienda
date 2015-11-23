@@ -1,0 +1,16 @@
+.related-container {
+	@include span-columns(12);
+}
+
+.related-title {
+	width: 100%;
+}
+
+.related-list {
+	@include span-columns(12)
+}
+
+.related-item {
+	@include span-columns(4);
+	@include omega(3n);
+}

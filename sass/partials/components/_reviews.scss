@@ -1,0 +1,23 @@
+.reviews-container {
+	@include span-columns(12);
+}
+
+.review-commentary-field {
+	@include span-columns(12);
+
+	form {
+		width: 100%;
+	}
+}
+
+.commentary-input {
+	width: 100%;
+}
+
+.commentary-submit {
+	width: 30%;
+}
+
+.review-commentary-list {
+	@include span-columns(12);
+}

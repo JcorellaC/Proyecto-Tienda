@@ -251,4 +251,98 @@ th, td {
   .cta:last-child {
     margin-right: 0; }
 
+.product-info-description {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%; }
+  .product-info-description:last-child {
+    margin-right: 0; }
+  .product-info-description p {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%; }
+    .product-info-description p:last-child {
+      margin-right: 0; }
+
+.produc-description-title {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%; }
+  .produc-description-title:last-child {
+    margin-right: 0; }
+
+.product-video {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%; }
+  .product-video:last-child {
+    margin-right: 0; }
+
+.related-container {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%; }
+  .related-container:last-child {
+    margin-right: 0; }
+
+.related-title {
+  width: 100%; }
+
+.related-list {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%; }
+  .related-list:last-child {
+    margin-right: 0; }
+
+.related-item {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 31.7615656014%; }
+  .related-item:last-child {
+    margin-right: 0; }
+  .related-item:nth-child(3n) {
+    margin-right: 0; }
+  .related-item:nth-child(3n+1) {
+    clear: left; }
+
+.reviews-container {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%; }
+  .reviews-container:last-child {
+    margin-right: 0; }
+
+.review-commentary-field {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%; }
+  .review-commentary-field:last-child {
+    margin-right: 0; }
+  .review-commentary-field form {
+    width: 100%; }
+
+.commentary-input {
+  width: 100%; }
+
+.commentary-submit {
+  width: 30%; }
+
+.review-commentary-list {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%; }
+  .review-commentary-list:last-child {
+    margin-right: 0; }
+
 /*# sourceMappingURL=style.css.map */

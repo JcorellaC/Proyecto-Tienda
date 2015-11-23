@@ -42,3 +42,15 @@
 .cta {
 	@include span-columns(3);
 }
+
+.product-info-description {
+	@include span-columns(12);
+
+	p {
+		@include span-columns(12);
+	}
+}
+
+.produc-description-title {
+	@include span-columns(12);
+}
