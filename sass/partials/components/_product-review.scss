@@ -8,10 +8,16 @@
 }
 
 .category-name {
+	@include font-size(14);
+	display: block;
+    margin: 10px 0;
+    text-transform: capitalize;
 	width: 100%;
 }
 
 .product-title {
+	@include font-size(32);
+	text-transform: capitalize;
 	width: 100%;
 }
 

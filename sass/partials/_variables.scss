@@ -9,10 +9,10 @@ $sprite-image: "../images/global-sprite";
 @import "neat";
 
 // Colors
-$body-back: #ccc;
-$section-back: #fff;
-$text-color: #036;
-$title-color: #cc9;
+$body-back: #f2f2f2;
+$section-back: #ccc;
+$text-color: #333;
+$title-color: #333;
 
 // Neat variables
 $max-width: 1200px;
@@ -20,3 +20,4 @@ $grid-colums: 12;
 
 // Breakpoints
 $desktop: 960px;
+$tablet: 620px;

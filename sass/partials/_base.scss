@@ -7,8 +7,10 @@ html {
 }
 
 body {
+  font-family: Helvetica;
   margin: 0;
   background-color: $body-back;
+  width: 100%
 }
 
 img {
@@ -65,13 +67,10 @@ th, td {
 .wrapper {
   @include outer-container;
   overflow: hidden;
+  padding: 50px 0;
 }
 
 .main-content {
   @include span-columns(10);
   @include shift(1);
-}
-
-div, section {
-  transition: all 1s linear;
 }

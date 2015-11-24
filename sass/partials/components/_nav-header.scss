@@ -1,44 +1,66 @@
 .nav {
-	@include span-columns(12);
+	background-color: $section-back;
+	box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.75);
+	height: 75px;
 	overflow: hidden;
+    padding: 10px 2%;
+    transition: height .5s linear;
+    width: 100%;
+
+    @media screen and (min-width: $desktop) {
+    	overflow: hidden;
+    }
 }
 
 .logo {
-	@include span-columns(2);
-	 img {
-	 	width: 100%;
-	 }
+	float: left;
+	width: 100px;
+
+	img {
+		width: 100%;
+	}
 }
 
 .show-menu {
-	@include span-columns(2);
-	@include shift(8);
-	@include omega();
+	border: 1px solid #333;
+	float: right;
+	@include font-size(20);
+	margin: 5px 2%;
+	padding: 10px 1%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100px;
 
-	text-align: center;
-
-	@media screen and(min-width:960px) {
+	@media screen and (min-width: $desktop) {
 		display: none;
 	}
 }
 
 .nav-container {
-	@include span-columns(12);
-	padding: 0;
+	width: 100%;
 
-	@media screen and (min-width: 960px) {
-		@include span-columns(10);
-		@include omega();
+	a {
+		text-transform: uppercase;
+	}
+
+	@media screen and (min-width: $desktop) {
+		float: left;
+		width: 600px;
 	}
 }
 
 .nav-item {
 	float: left;
+	margin: 10px 0;
 	padding: 10px 0;
 	text-align: center;
 	width: 100%;
 
-	@media screen and (min-width: 960px) {
+	a {
+		color: $text-color;
+	}
+
+	@media screen and (min-width: $desktop) {
 		width: 25%;
 	}
 }

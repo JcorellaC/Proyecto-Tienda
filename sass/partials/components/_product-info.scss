@@ -3,6 +3,9 @@
 
 	@media screen and (min-width: $desktop) {
 		@include span-columns(6 of 12);
+		background-color: rgba(0,0,0,.05);
+		margin-left: 5%;
+		padding: 10px 2%;
 	}
 }
 
