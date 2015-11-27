@@ -4,6 +4,7 @@
 
 .review-commentary-field {
 	@include span-columns(12);
+	margin: 35px 0;
 
 	form {
 		width: 100%;
@@ -11,6 +12,9 @@
 }
 
 .commentary-input {
+	border: none;
+    margin: 20px 0;
+    padding: 15px 1%;
 	width: 100%;
 
 	@media screen and (min-width: 620px) {
@@ -19,15 +23,26 @@
 }
 
 .commentary-submit {
-	width: 30%;
+	background-color: $section-back;
+    border: none;
+    color: $text-color;
+    padding: 10px 1%;
+    width: 25%;  
 }
 
 .review-commentary-list {
 	@include span-columns(12);
+
+	background-color: $section-back;
+	padding: 50px 5%;
 }
 
 .review-commentary-item {
 	@include span-columns(12);
+
+	border-bottom: 1px solid $text-color;
+	margin: 30px 0;
+	padding: 10px 1%;
 }
 
 .review-commentary-user-info {
