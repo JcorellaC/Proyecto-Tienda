@@ -11,6 +11,8 @@
 
 .related-list {
 	@include span-columns(12);
+	border: 1px solid $nav-color;
+	padding: 20px 0;
 }
 
 .related-item {

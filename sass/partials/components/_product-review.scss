@@ -1,5 +1,7 @@
 .product-review-container {
 	@include span-columns(12);
+	border: 1px dashed $nav-color;
+    padding: 15px 1%;
 
 	@media screen and (min-width: $desktop) {
 		@include span-columns(5 of 12);

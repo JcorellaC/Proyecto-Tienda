@@ -21,7 +21,6 @@ img {
 
 p, li {
   @include font-size(14);
-  color: #555;
   line-height: 1.5;
 }
 
@@ -38,7 +37,12 @@ ul, ol {
 }
 
 p {
+  color: $text-color;
   overflow: hidden;
+}
+
+span {
+  color: $text-color;
 }
 
 a {
@@ -51,6 +55,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
+  color: $text-color;
 }
 
 // Tablas

@@ -3,17 +3,21 @@
 
 	@media screen and (min-width: $desktop) {
 		@include span-columns(6 of 12);
-		background-color: rgba(0,0,0,.05);
 		margin-left: 5%;
 		padding: 10px 2%;
 	}
 }
 
 .product-maker {
+	@include font-size(32);
+	margin: 10px 0;
+	text-transform: capitalize;
 	width: 100%;
 }
 
 .product-price {
+	@include font-size(24);
+	text-transform: capitalize;
 	width: 100%;
 }
 
@@ -32,6 +36,9 @@
 
 .recent-review-container {
 	@include span-columns(12);
+	border: 1px solid $nav-color;
+	margin: 20px 0;
+	padding: 20px 2%;
 
 	img {
 		@include span-columns(4);
@@ -62,6 +69,8 @@
 	}
 }
 
-.produc-description-title {
+.product-description-title {
 	@include span-columns(12);
+	@include font-size(24);
+	text-transform: capitalize;
 }
