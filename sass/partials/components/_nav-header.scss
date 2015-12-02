@@ -4,12 +4,17 @@
 	height: 75px;
 	overflow: hidden;
     padding: 10px 2%;
+    position: absolute;
     transition: height .5s linear;
     width: 100%;
 
     @media screen and (min-width: $desktop) {
     	overflow: hidden;
     }
+}
+
+.expanded {
+	height: 315px;
 }
 
 .logo {

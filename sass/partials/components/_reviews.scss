@@ -29,7 +29,11 @@
     border: none;
     color: $text-color;
     padding: 10px 1%;
-    width: 25%;  
+    width: 25%;
+
+    &:hover {
+    	background-color: darken($nav-color, 50%);
+    } 
 }
 
 .review-commentary-list {

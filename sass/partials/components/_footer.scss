@@ -1,0 +1,8 @@
+.footer {
+	padding: 30px 2%;
+    background-color:darken($body-back, 10%);
+}
+
+.copy-right {
+	@include font-size(18);
+}
