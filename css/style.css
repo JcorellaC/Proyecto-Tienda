@@ -177,15 +177,6 @@ th, td {
   text-transform: capitalize;
   width: 100%; }
 
-.cta {
-  border: 1px solid #ccc;
-  color: #f2f2f2;
-  margin: 24px 0;
-  padding: 10px 1%;
-  text-align: center; }
-  .cta:hover {
-    background-color: #15b417; }
-
 .product-current-img {
   float: left;
   display: block;
@@ -305,9 +296,16 @@ th, td {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
-  width: 23.2317613015%; }
+  width: 31.7615656014%;
+  border: 1px solid #ccc;
+  color: #f2f2f2;
+  margin: 24px 0;
+  padding: 10px 1%;
+  text-align: center; }
   .cta:last-child {
     margin-right: 0; }
+  .cta:hover {
+    background-color: #15b417; }
 
 .product-info-description {
   float: left;

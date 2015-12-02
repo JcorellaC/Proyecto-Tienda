@@ -58,7 +58,17 @@
 }
 
 .cta {
-	@include span-columns(3);
+	@include span-columns(4);
+
+	border: 1px solid #ccc;
+    color: #f2f2f2;
+    margin: 24px 0;
+    padding: 10px 1%;
+    text-align: center;
+
+    &:hover {
+    	background-color: darken($nav-color, 25%);
+    }
 }
 
 .product-info-description {
